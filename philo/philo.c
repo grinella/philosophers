@@ -6,7 +6,7 @@
 /*   By: grinella <grinella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:31:56 by grinella          #+#    #+#             */
-/*   Updated: 2023/10/19 16:50:09 by grinella         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:52:07 by grinella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,9 @@ void	think(t_philosopher *philosopher)
 	usleep(table->time_to_think * 1000);
 }
 
-// Funzione per far dormire un filosofo
 void	sleep(t_philosopher *philosopher)
 {
-	// Filosofo dorme
 	printf("%ld %d is sleeping\n", get_timestamp(), philosopher->id);
-	// Simulazione del tempo necessario per dormire
 	usleep(table->time_to_sleep * 1000);
 }
 
@@ -62,13 +59,6 @@ void	initialize_table(t_table *table)
 
 	// Altre inizializzazioni specifiche del tavolo e dei filosofi
 }
-
-
-// Funzione per il comportamento di un filosofo
-#include "philo.h"
-
-// ... (altre dichiarazioni e definizioni)
-
 // Funzione per il comportamento di un filosofo
 void	*philosopher_thread(void *arg)
 {
@@ -99,9 +89,6 @@ void	*philosopher_thread(void *arg)
 	}
 	return (NULL);
 }
-
-// ... (altre definizioni)
-
 
 // Funzione per inizializzare il tavolo e i filosofi
 void initialize_table(t_table *table)

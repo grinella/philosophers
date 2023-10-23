@@ -1,4 +1,3 @@
-# Nome eseguibile
 NAME = philo
 
 # Compiler e flags

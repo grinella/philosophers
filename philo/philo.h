@@ -6,7 +6,7 @@
 /*   By: grinella <grinella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:31:21 by grinella          #+#    #+#             */
-/*   Updated: 2023/10/19 16:41:56 by grinella         ###   ########.fr       */
+/*   Updated: 2023/10/23 17:20:59 by grinella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include <pthread.h>
 # include <unistd.h>
-# include "libft.h"
+// # include "libft.h"
 
 typedef struct s_philosopher
 {
